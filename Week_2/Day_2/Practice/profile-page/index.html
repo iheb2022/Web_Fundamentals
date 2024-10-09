@@ -63,28 +63,28 @@
             <!-- connection requests card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge" id="requests">2</span>
+                    <span class="badge" id="else">2</span>
                     <h3>Connection Requests</h3>
                 </div>
                 <ul class="card-list">
-                    <li class="card-list-item" id="request-1">
+                    <li class="card-list-item" id="first">
                         <span>
                             <img src="images/todd-s.jpg" alt="todd" class="avatar-s">
                             Todd E
                         </span>
-                        <span onclick="hide('#remove')">
-                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept('#request-1')">
-                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="accept('#request-1')">
+                        <span>
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="delet('#first') , increase('#ther') , decrease('#else')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="delet('#first') ,decrease('#else')">
                         </span>
                     </li>
-                    <li class="card-list-item" id="request-2">
+                    <li class="card-list-item" id="second">
                         <span>
                             <img src="images/phil-s.jpg" alt="phil" class="avatar-s">
                             Phil E
                         </span>
-                        <span  onclick="hide('#remove')">
-                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept('#request-2')">
-                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="accept('#request-2')">
+                        <span>
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="delet('#second') , increase('#ther') , decrease('#else')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="delet('#second') ,decrease('#else')">
                         </span>
                     </li>
                 </ul>
@@ -93,7 +93,7 @@
             <!-- your connections card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">500+</span>
+                    <span class="badge" id="ther">418</span>
                     <h3>Your Connections</h3>
                 </div>
                 <ul class="card-list">

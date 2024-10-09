@@ -2,22 +2,19 @@ function clickbtn(element){
   var a=document.querySelector(element)
   a.innerText="Any name"
 }
-function hide(element){
-  var z=document.querySelector(element)
-  z.remove()
-}
 
-function accept(id) {
+function delet(id) {
   var element = document.querySelector(id);
   element.remove();
-  requestSpan.innerText--;
-  connectionSpan.innerText++;
 }
 
-function ignore(id) {
+function decrease(id){
+  var request=document.querySelector(id)
+  request.innerHTML--;
+}
+
+function increase(id) {
   var element = document.querySelector(id);
-  element.remove();
-  requestSpan.innerText--;
+  element.innerHTML++;
 }
-
 
